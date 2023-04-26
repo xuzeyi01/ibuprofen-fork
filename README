@@ -1,0 +1,35 @@
+                               IBUPROFEN-FORK
+
+             <xuzeyi@hsefz.cn> https://github.com/xuzeyi01/ibuprofen-fork
+         The original program was written by Richard-Zheng <yuqiu36@live.com>
+
+
+INTRODUCTION
+------------
+ibuprofen is a lightweight and fast RuiYi MyiPad self-learning data crawling tool
+
+FEATURES
+--------
+Lightning fast: it is able to crawl thousands of records as fast as 1 minute or less
+Simple: only a hundred lines of core code
+Persistent caching: except for the first crawl, all other crawl operations take less than 10 seconds
+
+USAGE
+-----
+Python 3.7 or above must be installed
+
+```
+pip install -r requirements.txt
+python user.py -p 123456 100000@xxx.lexuewang.cn:8003
+```
+
+APPLICATION
+-----------
+There is a simple static HTML generator to grab the data, generate HTML and upload it in Github Actions.
+To use it, Fork this repo, then set ARGS and Value to -p <Password> <ID> in the repository's secret in Settings/secrets.
+After that, select Generate HTMLs and upload in the Actions tab, and then run workflow.
+The result is located at https://xxx.lexuewang.cn:8003/GetTemporaryStorage?filename=~TMP_100000.html
+
+UPDATE
+------
+4/26 Update the client version and the README file.
