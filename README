@@ -32,4 +32,7 @@ The result is located at https://xxx.lexuewang.cn:8003/GetTemporaryStorage?filen
 
 UPDATE
 ------
-4/26 Update the client version and the README file.
+4/26 
+- Update the client version
+- Remove the login box in the HTML site (cuz its never working)
+- create a new README file
