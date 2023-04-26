@@ -32,6 +32,9 @@ def generate_index_html(user_classes: list, user_class_to_href):
                 with a.p():
                     with a.a(href=user_class_to_href(user_class)):
                         a(user_class.name)
+  
+            with a.h3(id="id23409231", klass='main_header'):
+                a("Hello World.")
     return str(a)
 
 
