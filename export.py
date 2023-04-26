@@ -26,7 +26,7 @@ def generate_index_html(user_classes: list, user_class_to_href):
     with a.html(lang="zh-Hans"):
         with a.head():
             a.meta(charset="utf-8")
-            a.title(_t='ibuprofen ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+            a.title(_t='ibuprofen-fork ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         with a.body():
             for user_class in user_classes:
                 with a.p():
@@ -52,10 +52,6 @@ def generate_user_class_html(user_class):
                         a.input(checked='checked', name='category', onchange='onSubjectCheckboxChange()', type='checkbox',
                                 value=key)
                         a(index_to_subject_name[key])
-            with a.div(id='user-login'):
-                a.label(for_='user-id', _t='用户名:')
-                a.input(id='user-id', type='text')
-                a.input(onclick='login(document.getElementById("user-id").value)', type='submit', value='登录')
             with a.ul():
                 for record in reversed(user_class.lesson_schedules):
                     if not 'title' in record:
