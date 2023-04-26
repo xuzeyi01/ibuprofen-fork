@@ -33,8 +33,8 @@ def generate_index_html(user_classes: list, user_class_to_href):
                     with a.a(href=user_class_to_href(user_class)):
                         a(user_class.name)
   
-            with a.h3(id="id23409231", klass='main_header'):
-                a(_t='ibuprofen-fork ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+            with a.h5(id="id23409231", klass='main_header'):
+                a("ibuprofen-fork " + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     return str(a)
 
 
