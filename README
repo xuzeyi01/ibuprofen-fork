@@ -1,4 +1,4 @@
-                               IBUPROFEN-FORK
+                                  IBUPROFEN-FORK
 
              <xuzeyi@hsefz.cn> https://github.com/xuzeyi01/ibuprofen-fork
          The original program was written by Richard-Zheng <yuqiu36@live.com>
@@ -33,6 +33,9 @@ The result is located at https://xxx.lexuewang.cn:8003/GetTemporaryStorage?filen
 
 UPDATE
 ------
+10/13
+- officially abandoned due to the bankruptcy of @RuiYiEducation
+- project archived
 4/26 
 - Update the client version
 - Remove the login box in the HTML site (cuz its never working)
